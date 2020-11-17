@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema1 30.06.2020</title>
+</head>
+<body>
+    <!-- Header -->
+    <h1>Planets</h1>
+
+    <!-- Table -->
+    <table border="2" style="width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                <th scope="col">Diameter (km)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" colspan="2" rowspan="4">Terrestrial planets</th>
+                <th scope="row">Mercury</th>
+                <td>0.33</th>
+                <td>4,879</th>
+            </tr>
+            <tr>
+                <th scope="row">Venus</th>
+                <td>4.87</th>
+                <td>12,104</th>
+            </tr>
+            <tr>
+                <th scope="row">Earth</th>
+                <td>5.97</th>
+                <td>12,756</th>
+            </tr>
+            <tr>
+                <th scope="row">Mars</th>
+                <td>0.642</th>
+                <td>6,792</th>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Jovian planets</th>
+                <th scope="rowgroup" rowspan="2">Gas giants</th>
+                <th>Jupiter</th>
+                <td>1898</th>
+                <td>142,984</th>
+            </tr>
+            <tr>
+                <th scope="row">Saturn</th>
+                <td>568</th>
+                <td>120,536</th>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Ice giants</th>
+                <th scope="row">Uranus</th>
+                <td>86.8</th>
+                <td>51,118</th>
+            </tr>
+            <tr>
+                <th>Neptune</th>
+                <td>102</th>
+                <td>49,528</th>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Dwarf planets</th>
+                <th scope="row">Pluto</th>
+                <td>0.0146</th>
+                <td>2,370</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- Form -->
+    <form action="index.html" method="get" style="width: 100%;">
+        <fieldset>
+            <legend> Ask us about planets </legend><br>
+
+            <lable for="fname">Full name: 
+            <input type="text" id="fname" name="fname" required>
+            </lable>
+            <br><br>
+            <lable for="mail">Email: 
+            <input type="email" id="mail" name="mail" required>
+            </lable>
+            <br><br>
+            Favorite Planet: <br><br>
+                <input type="radio" id="mercury" name="planets" value="mercury">
+                <lable for="mercury">Mercury</lable><br>
+                <input type="radio" id="venus" name="planets" value="venus">
+                <lable for="venus">Venus</lable><br>
+                <input type="radio" id="earth" name="planets" value="earth" checked>
+                <lable for="earth">Earth</lable><br>
+                <input type="radio" id="mars" name="planets" value="mars">
+                <lable for="mars">Mars</lable><br>
+                <input type="radio" id="jupiter" name="planets" value="jupiter">
+                <lable for="jupiter">Jupiter</lable><br>
+                <input type="radio" id="saturn" name="planets" value="saturn">
+                <lable for="saturn">Saturn</lable><br>
+                <input type="radio" id="uranus" name="planets" value="uranus">
+                <lable for="uranus">Uranus</lable><br>
+                <input type="radio" id="neptune" name="planets" value="neptune">
+                <lable for="neptune">Neptune</lable><br>
+                <input type="radio" id="pluto" name="planets" value="pluto">
+                <lable for="pluto">Pluto</lable><br><br>
+            <lable for="terms">
+                <input type="checkbox" id="terms" name="terms" required>I agree to the <a href="#">terms and conditions</a>
+            </lable>
+            <br>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Ask away</button>
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
