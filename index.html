@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema4 EShop</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fonts/glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <p class="header-icons"><span class="glyphicon glyphicon-map-marker"></span>Free and Fast Delivery</p>
+            <p class="header-icons"><span class="glyphicon glyphicon-envelope"></span>Free shipping On all orders</p>
+            <p class="header-icons"><span class="glyphicon glyphicon-earphone"></span>info@example.com</p>
+        </div>
+
+        <div class="header-media">
+            <img src="images/logo3.jpg" alt="logo" class="media">
+
+            <div class="media">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Search.." name="search">
+                    <select id="categories" name="categories">
+                        <option value="categories" selected>All Categories</option>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="electronics">Electronics</option>
+                    </select>
+                    <button type="submit" class="main-btn upp-btn"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+            </div>
+
+            <div class="media">
+                <span class="fa fa-user"></span>
+                <span class="fa fa-facebook"></span>
+                <span class="fa fa-twitter"></span>
+                <span class="fa fa-instagram"></span>
+                <span class="fa fa-youtube"></span>
+            </div>
+
+        </div>
+
+        <div class="menu-container">
+            <div class="main-menu" id="myMenu">
+
+                <a href="#" class="main-menu__item">Home</a>
+                <a href="#" class="main-menu__item dropdown">
+                    <button class="dropbtn" onclick="man()">Men's wear
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </button>
+                    <div class="dropdown-content" id="manDropdown">
+                        <div class="row">
+                            <div class="column">
+                                <img src="images/woo1.jpg" alt="man-img" class="man-img">
+                            </div>
+                            <div class="column">
+                                <a href="#">Clothing</a>
+                                <a href="#">Wallets</a>
+                                <a href="#">Footwear</a>
+                                <a href="#">Watches</a>
+                                <a href="#">Accesories</a>
+                                <a href="#">Bags</a>
+                                <a href="#">Caps & Hats</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">Jewellery</a>
+                                <a href="#">Sunglasses</a>
+                                <a href="#">Parfumes</a>
+                                <a href="#">Beauty</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Sunglasses</a>
+                                <a href="#">Swimwear</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="main-menu__item dropdown">
+                    <button class="dropbtn" onclick="woman()">Woman's wear
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </button>
+                    <div class="dropdown-content" id="womanDropdown">
+                        <div class="row">
+                            <div class="column">
+                                <img src="images/woo.jpg" alt="woman-img" class="woman-img">
+                            </div>
+                            <div class="column">
+                                <a href="#">Clothing</a>
+                                <a href="#">Wallets</a>
+                                <a href="#">Footwear</a>
+                                <a href="#">Watches</a>
+                                <a href="#">Accesories</a>
+                                <a href="#">Bags</a>
+                                <a href="#">Caps & Hats</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">Jewellery</a>
+                                <a href="#">Sunglasses</a>
+                                <a href="#">Parfumes</a>
+                                <a href="#">Beauty</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Sunglasses</a>
+                                <a href="#">Swimwear</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="main-menu__item">Electronics</a>
+                <a href="#" class="main-menu__item">Short codes</a>
+                <a href="#" class="main-menu__item">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <a href="#" class="active">
+                    <div class="main-menu__cart">
+                        <button type="submit" class="main-btn cart"><span class="glyphicon glyphicon-shopping-cart"></span>$0.00 (0 items)</button>
+                        <button type="reset" class="main-btn cart" value="Reset">Empty Cart</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/baa1.jpg" alt="store-img" class="store-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/baa2.jpg" alt="store-img" class="store-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/baa3.jpg" alt="store-img" class="store-img">
+            </div>
+        </div>
+        <div class="slideshow-dot">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    </section>
+
+    <section class="promotions">
+        <div class="new-arrivals">
+            <h2><span id="first">New</span>  arrivals</h2>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus doloremque eveniet natus numquam error!</p>
+        </div>
+
+        <div class="collections">
+            <div class="card-promo women">
+                <img class="card-img wedding" src="images/wed1.jpg" alt="Wedding Woman">
+                <div class="card-text__wedding">
+                    <p class="card-text title">Wedding Collections</p>
+                    <p class="card-text">Flat 50% Discount</p>
+                    <div class="price">
+                        <del>
+                            <span class="initial">$250</span>
+                        </del>
+                        <ins>
+                            <span class="actual">$500</span>
+                        </ins>
+                    </div>
+                    <button type="submit" class="main-btn upp-btn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card-promo brand">
+                <div class="levis">
+                    <img class="brand-img" src="images/levis1.png" alt="Levi's">
+                    <h4 class="text-subtitle black">up to 40% off</h4>
+                    <p class="shop-now"><button type="submit" class="main-btn">Shop now</button></p>
+                </div>
+                <div class="digjam">
+                    <h4 class="text-subtitle black">up to 40% off</h4>
+                    <p class="shop-now"><button type="submit" class="main-btn">Shop now</button></p>
+                    <img class="brand-img" src="images/dig.jpg" alt="Digjam">
+                </div>
+            </div>
+
+            <div class="card-promo man">
+                <img class="card-img wedding" src="images/wed2.jpg" alt="Wedding Men">
+                <div class="card-text__wedding man">
+                    <p class="card-text title men">Spring / Summer</p>
+                    <p class="card-text subtitle">Shop men</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <main>
+        <div class="article-section">
+
+            <button class="tablink" onclick="openPage('Latest', this)">Latest Designs</button>
+            <button class="tablink" onclick="openPage('Special', this)" id="defaultOpen">Special Offers</button>
+            <button class="tablink" onclick="openPage('Collections', this)">Collections</button>
+        
+            <div id="Latest" class="tabcontent">
+                <article class="card">
+                    <img class="card-img" src="images/a1.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="images/a8.png" alt="Next Blue Blazer">
+                    <header class="card-header">
+                        <p class="product-name">Next Blue Blazer</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$99.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$100.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">1+1 offer</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a3.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$119.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$120.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a4.png" alt="Maroon Puma Tshirt">
+                    <header class="card-header">
+                        <p class="product-name">Maroon Puma Tshirt</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$79.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$120.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a5.png" alt="Multicoloured Tshirts">
+                    <header class="card-header">
+                        <p class="product-name">Multicoloured Tshirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">combo pack</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a6.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a7.png" alt="Dresses">
+                    <header class="card-header">
+                        <p class="product-name">Dresses</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a2.png" alt="Wedding Blazers">
+                    <header class="card-header">
+                        <p class="product-name">Wedding Blazers</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g1.png" alt="Dresses">
+                    <header class="card-header">
+                        <p class="product-name">Dresses</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g2.png" alt="Shirts">
+                    <header class="card-header">
+                        <p class="product-name">Shirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g3.png" alt="Shirts">
+                    <header class="card-header">
+                        <p class="product-name">Shirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/mw2.png" alt="T shirt">
+                    <header class="card-header">
+                        <p class="product-name">T shirt</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+            </div>
+        
+            <div id="Special" class="tabcontent">
+                <article class="card">
+                    <img class="card-img" src="images/a1.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="images/a8.png" alt="Next Blue Blazer">
+                    <header class="card-header">
+                        <p class="product-name">Next Blue Blazer</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$99.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$100.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">1+1 offer</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a3.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$119.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$120.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a4.png" alt="Maroon Puma Tshirt">
+                    <header class="card-header">
+                        <p class="product-name">Maroon Puma Tshirt</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$79.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$120.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a5.png" alt="Multicoloured Tshirts">
+                    <header class="card-header">
+                        <p class="product-name">Multicoloured Tshirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">combo pack</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a6.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a7.png" alt="Dresses">
+                    <header class="card-header">
+                        <p class="product-name">Dresses</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a2.png" alt="Wedding Blazers">
+                    <header class="card-header">
+                        <p class="product-name">Wedding Blazers</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g1.png" alt="Dresses">
+                    <header class="card-header">
+                        <p class="product-name">Dresses</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g2.png" alt="Shirts">
+                    <header class="card-header">
+                        <p class="product-name">Shirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g3.png" alt="Shirts">
+                    <header class="card-header">
+                        <p class="product-name">Shirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/mw2.png" alt="T shirt">
+                    <header class="card-header">
+                        <p class="product-name">T shirt</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+            </div>
+        
+            <div id="Collections" class="tabcontent">
+                <article class="card">
+                    <img class="card-img" src="images/a1.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="images/a8.png" alt="Next Blue Blazer">
+                    <header class="card-header">
+                        <p class="product-name">Next Blue Blazer</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$99.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$100.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">1+1 offer</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a3.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$119.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$120.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a4.png" alt="Maroon Puma Tshirt">
+                    <header class="card-header">
+                        <p class="product-name">Maroon Puma Tshirt</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$79.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$120.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a5.png" alt="Multicoloured Tshirts">
+                    <header class="card-header">
+                        <p class="product-name">Multicoloured Tshirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">combo pack</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a6.png" alt="Air Tshirt Black">
+                    <header class="card-header">
+                        <p class="product-name">Air Tshirt Black</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a7.png" alt="Dresses">
+                    <header class="card-header">
+                        <p class="product-name">Dresses</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/a2.png" alt="Wedding Blazers">
+                    <header class="card-header">
+                        <p class="product-name">Wedding Blazers</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$129.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$150.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g1.png" alt="Dresses">
+                    <header class="card-header">
+                        <p class="product-name">Dresses</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g2.png" alt="Shirts">
+                    <header class="card-header">
+                        <p class="product-name">Shirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/g3.png" alt="Shirts">
+                    <header class="card-header">
+                        <p class="product-name">Shirts</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/mw2.png" alt="T shirt">
+                    <header class="card-header">
+                        <p class="product-name">T shirt</p>
+                        <div class="product-price">
+                            <ins>
+                                <span class="actual">$45.99</span>
+                            </ins>
+                            <del>
+                                <span class="initial">$69.71</span>
+                            </del>
+                        </div>
+                    </header>
+                    <footer class="card-footer"><button type="submit" class="main-btn">Add to cart</button></footer>
+                    <span class="product-tag">new</span>
+                </article>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer class="general">
+        <section class="footer-steps">
+            <div class="footer-section separate">
+                <h4 class="text-title">Buy your product in a simple way</h4>
+            </div>
+
+            <span class="footer-section">
+                <span class="glyphicon glyphicon-user"></span>
+                <h4 class="text-subtitle">Login to your acount</h4>
+                <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, illum.</p>
+            </span>
+
+            <span class="footer-section">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h4 class="text-subtitle">Login to your acount</h4>
+                <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, illum.</p>
+            </span>
+
+            <span class="footer-section">
+                <span class="glyphicon glyphicon-credit-card"></span>
+                <h4 class="text-subtitle">Make payment</h4>
+                <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, illum.</p>
+            </span>
+
+        </section>
+        <section class="footer-information">
+            <div class="footer-logo">
+                <img src="images/logo3.jpg" alt="logo" class="logo logo-footer">
+                <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas suscipit animi commodi debitis officiis laudantium exercitationem, obcaecati totam ducimus ex.</p>
+            </div>
+            <div class="footer-info">
+            <span class="footer-section">
+                <h4 class="text-subtitle black">Sign up for newsletter !</h4>
+                <div class="email-container">
+                    <form action="#" method="get">
+                        <input type="email" placeholder="Email" name="email">
+                        <button type="Submit" class="main-btn upp-btn">Submit</button>
+                    </form>
+                </div>
+            </span>
+            <span class="footer-section">
+                <h4 class="text-title__small">Information</h4>
+                <nav class="footer-menu">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item"><a href="#"></a>Home</li>
+                        <li class="footer-menu__item"><a href="#"></a>Men's wear</li>
+                        <li class="footer-menu__item"><a href="#"></a>Woman's wear</li>
+                        <li class="footer-menu__item"><a href="#"></a>Electronics</li>
+                        <li class="footer-menu__item"><a href="#"></a>Short codes</li>
+                        <li class="footer-menu__item"><a href="#"></a>Contact</li>
+                    </ul>
+                </nav>
+            </span>
+            <span class="footer-section">
+                <h4 class="text-title__small">Store Information</h4>
+                <div class="footer-adress">
+                    <p class="footer-icon"><span class="glyphicon glyphicon-map-marker"></span>Address: 1234k Avenue, 4th block, NewYork City</p>
+                    <p class="footer-icon"><span class="glyphicon glyphicon-envelope"></span>Email: info@example.com</p>
+                    <p class="footer-icon"><span class="glyphicon glyphicon-earphone"></span>Phone: + 1234 567 567</p>
+                </div>
+            </span>
+            <span class="footer-section">
+                <h4 class="text-title__small">Flickr Posts</h4>
+                <div class="footer-adress">
+                    <img class="post__img" src="images/b15.jpg" alt="Posts">
+                    <img class="post__img" src="images/b16.jpg" alt="Posts">
+                    <img class="post__img" src="images/b17.jpg" alt="Posts">
+                    <img class="post__img" src="images/b18.jpg" alt="Posts">
+                    <img class="post__img" src="images/b15.jpg" alt="Posts">
+                    <img class="post__img" src="images/b16.jpg" alt="Posts">
+                    <img class="post__img" src="images/b17.jpg" alt="Posts">
+                    <img class="post__img" src="images/b18.jpg" alt="Posts">
+                    <img class="post__img" src="images/b15.jpg" alt="Posts">
+                </div>
+            </span>
+        </div>
+
+        </section>
+
+        <p class="footer-copyright">&copy; Smart Shop. All rights reserved | Design by W3layouts</p>
+    
+    </footer>
+
+</body>
+</html>
