@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item item-logo">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" class="svg-inline--fa fa-angle-double-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path></svg>
+                        <span>
+                            Logo
+                        </span>
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="biking" class="svg-inline--fa fa-biking fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M400 96a48 48 0 1 0-48-48 48 48 0 0 0 48 48zm-4 121a31.9 31.9 0 0 0 20 7h64a32 32 0 0 0 0-64h-52.78L356 103a31.94 31.94 0 0 0-40.81.68l-112 96a32 32 0 0 0 3.08 50.92L288 305.12V416a32 32 0 0 0 64 0V288a32 32 0 0 0-14.25-26.62l-41.36-27.57 58.25-49.92zm116 39a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm0 192a64 64 0 1 1 64-64 64 64 0 0 1-64 64zM128 256a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm0 192a64 64 0 1 1 64-64 64 64 0 0 1-64 64z"></path></svg>
+                        <span>
+                            Bike
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dumbbell" class="svg-inline--fa fa-dumbbell fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"></path></svg>
+                        <span>
+                            Fit
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="running" class="svg-inline--fa fa-running fa-w-13" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512"><path fill="currentColor" d="M272 96c26.51 0 48-21.49 48-48S298.51 0 272 0s-48 21.49-48 48 21.49 48 48 48zM113.69 317.47l-14.8 34.52H32c-17.67 0-32 14.33-32 32s14.33 32 32 32h77.45c19.25 0 36.58-11.44 44.11-29.09l8.79-20.52-10.67-6.3c-17.32-10.23-30.06-25.37-37.99-42.61zM384 223.99h-44.03l-26.06-53.25c-12.5-25.55-35.45-44.23-61.78-50.94l-71.08-21.14c-28.3-6.8-57.77-.55-80.84 17.14l-39.67 30.41c-14.03 10.75-16.69 30.83-5.92 44.86s30.84 16.66 44.86 5.92l39.69-30.41c7.67-5.89 17.44-8 25.27-6.14l14.7 4.37-37.46 87.39c-12.62 29.48-1.31 64.01 26.3 80.31l84.98 50.17-27.47 87.73c-5.28 16.86 4.11 34.81 20.97 40.09 3.19 1 6.41 1.48 9.58 1.48 13.61 0 26.23-8.77 30.52-22.45l31.64-101.06c5.91-20.77-2.89-43.08-21.64-54.39l-61.24-36.14 31.31-78.28 20.27 41.43c8 16.34 24.92 26.89 43.11 26.89H384c17.67 0 32-14.33 32-32s-14.33-31.99-32-31.99z"></path></svg>
+                        <span>
+                            Run
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="skiing" class="svg-inline--fa fa-skiing fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432 96c26.5 0 48-21.5 48-48S458.5 0 432 0s-48 21.5-48 48 21.5 48 48 48zm73 356.1c-9.4-9.4-24.6-9.4-33.9 0-12.1 12.1-30.5 15.4-45.1 8.7l-135.8-70.2 49.2-73.8c12.7-19 10.2-44.5-6-60.6L293 215.7l-107-53.1c-2.9 19.9 3.4 40 17.7 54.4l75.1 75.2-45.9 68.8L35 258.7c-11.7-6-26.2-1.5-32.3 10.3-6.1 11.8-1.5 26.3 10.3 32.3l391.9 202.5c11.9 5.5 24.5 8.1 37.1 8.1 23.2 0 46-9 63-26 9.3-9.3 9.3-24.5 0-33.8zM120 91.6l-11.5 22.5c14.4 7.3 31.2 4.9 42.8-4.8l47.2 23.4c-.1.1-.1.2-.2.3l114.5 56.8 32.4-13 6.4 19.1c4 12.1 12.6 22 24 27.7l58.1 29c15.9 7.9 35 1.5 42.9-14.3 7.9-15.8 1.5-35-14.3-42.9l-52.1-26.1-17.1-51.2c-8.1-24.2-40.9-56.6-84.5-39.2l-81.2 32.5-62.5-31c.3-14.5-7.2-28.6-20.9-35.6l-11.1 21.7h-.2l-34.4-7c-1.8-.4-3.7.2-5 1.7-1.9 2.2-1.7 5.5.5 7.4l26.2 23z"></path></svg>
+                        <span>
+                            Ski
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="swimmer" class="svg-inline--fa fa-swimmer fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M189.61 310.58c3.54 3.26 15.27 9.42 34.39 9.42s30.86-6.16 34.39-9.42c16.02-14.77 34.5-22.58 53.46-22.58h16.3c18.96 0 37.45 7.81 53.46 22.58 3.54 3.26 15.27 9.42 34.39 9.42s30.86-6.16 34.39-9.42c14.86-13.71 31.88-21.12 49.39-22.16l-112.84-80.6 18-12.86c3.64-2.58 8.28-3.52 12.62-2.61l100.35 21.53c25.91 5.53 51.44-10.97 57-36.88 5.55-25.92-10.95-51.44-36.88-57L437.68 98.47c-30.73-6.58-63.02.12-88.56 18.38l-80.02 57.17c-10.38 7.39-19.36 16.44-26.72 26.94L173.75 299c5.47 3.23 10.82 6.93 15.86 11.58zM624 352h-16c-26.04 0-45.8-8.42-56.09-17.9-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C461.8 343.58 442.04 352 416 352s-45.8-8.42-56.09-17.9c-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C269.8 343.58 250.04 352 224 352s-45.8-8.42-56.09-17.9c-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C77.8 343.58 58.04 352 32 352H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h16c38.62 0 72.72-12.19 96-31.84 23.28 19.66 57.38 31.84 96 31.84s72.72-12.19 96-31.84c23.28 19.66 57.38 31.84 96 31.84s72.72-12.19 96-31.84c23.28 19.66 57.38 31.84 96 31.84h16c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-512-96c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80z"></path></svg>
+                        <span>
+                            Swim
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="nav-item item-footer">
+                    <a href="#" class="nav-link">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="umbrella-beach" class="svg-inline--fa fa-umbrella-beach fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M115.38 136.9l102.11 37.18c35.19-81.54 86.21-144.29 139-173.7-95.88-4.89-188.78 36.96-248.53 111.8-6.69 8.4-2.66 21.05 7.42 24.72zm132.25 48.16l238.48 86.83c35.76-121.38 18.7-231.66-42.63-253.98-7.4-2.7-15.13-4-23.09-4-58.02.01-128.27 69.17-172.76 171.15zM521.48 60.5c6.22 16.3 10.83 34.6 13.2 55.19 5.74 49.89-1.42 108.23-18.95 166.98l102.62 37.36c10.09 3.67 21.31-3.43 21.57-14.17 2.32-95.69-41.91-187.44-118.44-245.36zM560 447.98H321.06L386 269.5l-60.14-21.9-72.9 200.37H16c-8.84 0-16 7.16-16 16.01v32.01C0 504.83 7.16 512 16 512h544c8.84 0 16-7.17 16-16.01v-32.01c0-8.84-7.16-16-16-16z"></path></svg>
+                        <span>
+                            Holliday
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <main>
+            <h1>
+                Flex is cool 🙂 
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quas sit magnam deleniti consequuntur eos laudantium laboriosam recusandae! Nemo magni molestiae repellendus, illo cum perspiciatis dolores quia beatae voluptatum sapiente!
+                Perferendis vero animi aspernatur magni, delectus, veniam sint, dignissimos assumenda nobis inventore quos! Dolore esse officiis commodi tenetur sapiente qui accusantium animi sed. Minus dignissimos fugit amet, voluptate facere officiis.
+                Dignissimos deserunt molestiae cupiditate iste eveniet aperiam harum perferendis, vitae animi consectetur quaerat, repudiandae aliquam. Iusto dolor quasi repellendus dolore enim, ex, provident veritatis quisquam tempora labore quos ipsum aut.
+                Blanditiis quam corporis suscipit necessitatibus repellat quos perspiciatis ab at deleniti sapiente aspernatur consequuntur beatae aliquid minima praesentium debitis maiores placeat eaque cumque sunt alias ratione, delectus exercitationem. Iste, cupiditate.
+                Maiores odio rerum incidunt asperiores aut ex totam deleniti nisi dolorem dolorum, ducimus illum blanditiis sunt neque pariatur, debitis numquam voluptatibus aliquid earum. Non alias qui consectetur autem fugiat sunt.
+            </p>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nihil consequatur tempore aperiam rem voluptatibus, illum ipsam ducimus, recusandae inventore possimus molestiae, assumenda odio exercitationem fugit culpa maxime quaerat doloremque.
+                Iusto nesciunt animi unde reiciendis magni minima nemo eos ab consectetur aspernatur omnis, voluptatibus iste explicabo sunt soluta repudiandae eaque quo? Sed voluptatum corrupti cupiditate numquam, quaerat quam in repellat.
+                Necessitatibus, voluptatum officiis. Tenetur, vero labore voluptates sapiente alias quam optio eveniet repudiandae esse voluptatibus totam expedita, dolorem inventore culpa veritatis provident voluptatem! Nemo, fuga! Nam sit minus deleniti tenetur!
+                Esse cumque recusandae laudantium aperiam et placeat, excepturi fuga necessitatibus doloremque hic nesciunt rem quaerat culpa molestiae alias atque. Odio, explicabo mollitia! Officia esse dolores suscipit? Iusto in sunt fugit.
+                Impedit reiciendis et pariatur tempore aut numquam odit beatae asperiores quod dicta earum unde aperiam iusto blanditiis quae, labore architecto id eveniet voluptatum illo eius cumque incidunt. Maxime, distinctio sequi?
+            </p>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error non, aspernatur voluptatum velit magnam molestias nobis optio cum aliquam labore? Quae facere quaerat corporis dolorum culpa repellat eos neque consequuntur.
+                Fugiat iste quia doloremque praesentium consectetur facilis animi minima, dolore cupiditate distinctio nemo non illo in illum iure recusandae soluta dolor placeat. Omnis doloribus esse quisquam veniam praesentium perspiciatis nobis?
+                Illum praesentium, quasi soluta officia at itaque nam ullam dolores id quod assumenda, quis fugiat quas placeat obcaecati aperiam, quaerat beatae impedit. Provident, blanditiis voluptatum rem voluptas laudantium harum? Ipsam.
+                Blanditiis amet, repellat facilis placeat provident, doloremque debitis iusto iure in non necessitatibus laboriosam modi veritatis voluptas reprehenderit quae. Ut autem, tempora nemo omnis laudantium cupiditate sunt natus commodi ex.
+                Quod totam dolorum, veniam aperiam corrupti non pariatur minus doloribus nobis quas hic delectus, tenetur consequatur inventore adipisci nemo, ipsam alias soluta necessitatibus sit temporibus dignissimos voluptatum vero! Facilis, labore.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nam, aliquid ab amet consequuntur dolorum quibusdam officiis voluptatem quod dignissimos, rem quisquam corporis similique iure veritatis. Quis autem sint provident?
+                Sint illo expedita blanditiis nesciunt, vitae sed vero explicabo ratione, id eligendi sapiente ex dolorem possimus perspiciatis! Quo eligendi natus consequuntur, iste ab possimus? Impedit odit incidunt nam harum voluptatum!
+                Eligendi laudantium tempore repudiandae distinctio sunt odio ipsam asperiores obcaecati ducimus fugiat, sint soluta quam voluptatibus laborum labore dolorum! Nostrum pariatur aut earum nulla quod facilis officia! Magni, praesentium nisi?
+                Aliquam molestias, delectus deserunt repellendus aspernatur nobis obcaecati necessitatibus mollitia porro voluptates debitis cum praesentium hic itaque odit ex impedit accusantium blanditiis perspiciatis enim tempore tenetur! Nobis illo totam in?
+                Vel repellendus ducimus pariatur, illum autem blanditiis qui cum minima doloremque perspiciatis at nesciunt officiis modi voluptates. Culpa enim corporis consequuntur vero sit dolorem maiores tenetur ab explicabo. Reprehenderit, facilis?
+            </p>
+        </main>
+
+
+</body>
+</html>
